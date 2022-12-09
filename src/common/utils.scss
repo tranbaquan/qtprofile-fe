@@ -1,0 +1,42 @@
+%transition-all {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+@mixin translateY($percent) {
+  -ms-transform: translateY($percent);
+  transform: translateY($percent);
+}
+
+@mixin translateX($percent) {
+  -ms-transform: translateX($percent);
+  transform: translateX($percent);
+}
+
+@mixin skewX($deg) {
+  -ms-transform: skewX($deg);
+  transform: skewX($deg);
+}
+
+
+@keyframes move-left-to-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 85%;
+  }
+}
+
+@keyframes width-left-to-right {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}

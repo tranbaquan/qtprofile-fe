@@ -1,0 +1,8 @@
+<div class="d-flex flex-column gap-2">
+  <span class="text">{{text}}</span>
+  <div class="bar">
+    <div class="percent" [style.width.%]="rate"></div>
+    <div class="text-percent">{{rate}}%</div>
+    <div class="circle" [style.left.%]="rate"></div>
+  </div>
+</div>

@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
-@import "color-variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap');
+@import 'color-variables';
+@import 'responsive';
+@import 'utils';
 
 * {
   margin: 0;
@@ -10,8 +12,16 @@
   z-index: 10;
 }
 
+html {
+  font-size: 14px;
+
+  @include md {
+    font-size: 16px;
+  }
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -20,13 +30,17 @@ img {
   object-fit: cover;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-a:focus, input:focus, textarea:focus, button:focus {
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -37,43 +51,73 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: $cyan;
+  color: $dark-cyan-300;
 }
 
-i, span, a {
+i,
+span,
+a {
   display: inline-block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: $dark-cyan-100;
   margin: 0;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1rem;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 0.75rem;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 0.625rem;
 }
 
 p {
   color: $dark-cyan-100;
+}
+
+.icon-btn {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  color: $cyan;
+  background-color: transparent;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  @extend %transition-all;
+
+  @include lg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    box-shadow: 1px 0 5px 0 $dark-cyan-100-5;
+  }
 }
