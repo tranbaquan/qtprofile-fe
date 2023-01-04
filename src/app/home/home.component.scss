@@ -9,9 +9,13 @@ $nav-bar-height: 100px;
   overflow: hidden;
   padding-top: $nav-bar-height;
   width: 100%;
-  height: 100vh;
   z-index: 0;
-  background: $light-100;
+  background: $color-light-300;
+  box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
+
+  @include lg {
+    height: 100vh;
+  }
 
   .overlay {
     position: absolute;
@@ -20,7 +24,8 @@ $nav-bar-height: 100px;
     width: 65%;
     height: 100%;
     z-index: 1;
-    background-color: $cyan;
+    background-color: $color-cyan-primary;
+    box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
     @include skewX(20deg);
   }
 
@@ -28,7 +33,7 @@ $nav-bar-height: 100px;
     position: absolute;
     top: 50%;
     left: 20px;
-    border: solid 1px $dark-cyan-100;
+    border: solid 1px $color-dark-cyan-100;
     border-radius: 50px;
     @include translateY(-50%);
 
@@ -53,13 +58,12 @@ $nav-bar-height: 100px;
       img {
         width: 100%;
         max-width: 550px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        @include translateX(-50%);
 
-        @include small-than-lg {
-          object-fit: contain;
+        @include lg {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          @include translateX(-50%);
         }
       }
     }
@@ -67,22 +71,22 @@ $nav-bar-height: 100px;
     .intro {
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      align-items: start;
+      justify-content: flex-start;
+      align-items: flex-start;
 
       .category {
-        font-size: 1.25rem;
+        font-size: 2rem;
         font-weight: 500;
-        color: $cyan;
+        color: $color-cyan-primary;
       }
 
       .title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 600;
       }
 
       .description {
-        color: $dark-cyan-100-8;
+        color: $color-dark-cyan-100-8;
         text-align: justify;
       }
 
@@ -93,8 +97,8 @@ $nav-bar-height: 100px;
         padding: 0 40px;
         height: 50px;
         border-radius: 25px;
-        color: $white;
-        background-color: $cyan;
+        color: $color-white;
+        background-color: $color-cyan-primary;
         cursor: pointer;
         -webkit-transition: all 0.4s ease-out 0s;
         -moz-transition: all 0.4s ease-out 0s;
@@ -103,8 +107,8 @@ $nav-bar-height: 100px;
         transition: all 0.4s ease-out 0s;
 
         &:hover {
-          background-color: $cyan-900;
-          color: $white;
+          background-color: $color-cyan-900;
+          color: $color-white;
         }
       }
 
@@ -119,12 +123,14 @@ $nav-bar-height: 100px;
 .about {
   padding: 100px 0;
   height: 100vh;
+  background: $color-light-100;
+  box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
 
   .about-main {
     .category {
       font-size: 1.5rem;
       font-weight: 500;
-      color: $cyan;
+      color: $color-cyan-primary;
     }
 
     .title {
@@ -133,14 +139,14 @@ $nav-bar-height: 100px;
     }
 
     .description {
-      color: $dark-cyan-100-8;
+      color: $color-dark-cyan-100-8;
       text-align: justify;
     }
 
     .separator {
       width: 100px;
       height: 5px;
-      background-color: $cyan;
+      background-color: $color-cyan-primary;
       border-radius: 3px;
     }
 
@@ -153,16 +159,18 @@ $nav-bar-height: 100px;
         display: none;
       }
 
-      .circle-frame {
+      .frame {
         width: 450px;
         height: 450px;
         position: absolute;
         bottom: 0;
         background-color: transparent;
-        border: solid 15px $cyan;
+        box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
+        border: solid 15px $color-cyan-primary;
 
         &.top {
           border-top: none;
+          box-shadow: none;
         }
       }
 
@@ -171,6 +179,25 @@ $nav-bar-height: 100px;
         bottom: 0;
         width: 450px;
       }
+    }
+  }
+}
+
+.experience {
+  padding: 100px 0;
+  height: 100vh;
+  background-color: $color-light-400;
+
+  .experience-main {
+    .title {
+      color: $color-cyan-primary;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: .815rem;
+      color: $color-dark-cyan-100-8;
+      text-align: justify;
     }
   }
 }

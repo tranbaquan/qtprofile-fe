@@ -6,37 +6,27 @@
   transition: all 0.3s ease-out 0s;
 }
 
-@mixin translateY($percent) {
-  -ms-transform: translateY($percent);
-  transform: translateY($percent);
+@mixin translateY($value) {
+  -ms-transform: translateY($value);
+  transform: translateY($value);
 }
 
-@mixin translateX($percent) {
-  -ms-transform: translateX($percent);
-  transform: translateX($percent);
+@mixin translateX($value) {
+  -ms-transform: translateX($value);
+  transform: translateX($value);
+}
+
+@mixin translate($value) {
+  -ms-transform: translate($value, $value);
+  transform: translate($value, $value);
+}
+
+@mixin translateXY($valueX, $valueY) {
+  -ms-transform: translate($valueX, $valueY);
+  transform: translate($valueX, $valueY);
 }
 
 @mixin skewX($deg) {
   -ms-transform: skewX($deg);
   transform: skewX($deg);
-}
-
-
-@keyframes move-left-to-right {
-  from {
-    left: 0;
-  }
-  to {
-    left: 85%;
-  }
-}
-
-@keyframes width-left-to-right {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 85%;
-  }
 }

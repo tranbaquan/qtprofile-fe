@@ -1,51 +1,61 @@
 @use 'sass:color';
 
-$cyan: #00a6a7;
-$cyan-100: #aaf2ef;
-$cyan-200: #75e9e5;
-$cyan-300: #3cdddc;
-$cyan-400: #00d5d6;
-$cyan-500: #00ccd3;
-$cyan-600: #00bcc0;
-$cyan-700: #00a6a7;
-$cyan-800: #00918f;
-$cyan-900: #006d65;
+$color-cyan-primary: #00a6a7;
+$color-cyan-100: #aaf2ef;
+$color-cyan-200: #75e9e5;
+$color-cyan-300: #3cdddc;
+$color-cyan-400: #00d5d6;
+$color-cyan-500: #00ccd3;
+$color-cyan-600: #00bcc0;
+$color-cyan-700: #00a6a7;
+$color-cyan-800: #00918f;
+$color-cyan-900: #006d65;
 
-$white: #ffffff;
+$color-white: #ffffff;
 
-$light-100: #f9f9f9;
-$light-200: #f8f8f8;
-$light-300: #f7f7f7;
-$light-400: #f6f6f6;
-$light-500: #f5f5f5;
-$light-600: #f4f4f4;
-$light-700: #f3f3f3;
-$light-800: #f2f2f2;
-$light-900: #f1f1f1;
+$color-light-100: #fcfcfc;
+$color-light-200: #fafafa;
+$color-light-300: #f8f8f8;
+$color-light-400: #f6f6f6;
+$color-light-500: #ececec;
+$color-light-600: #e1e1e1;
+$color-light-700: #d0d0d0;
 
-$dark-cyan-100: #112a35;
-$dark-cyan-200: #1a3f50;
-$dark-cyan-300: #23546b;
+$color-dark-cyan-100: #112a35;
+$color-dark-cyan-200: #1a3f50;
+$color-dark-cyan-300: #23546b;
 
-$dark-cyan-100-1: rgba(17, 42, 53, 0.1);
-$dark-cyan-100-2: rgba(17, 42, 53, 0.2);
-$dark-cyan-100-5: rgba(17, 42, 53, 0.5);
-$dark-cyan-100-8: rgba(17, 42, 53, 0.8);
+$color-dark-cyan-100-1: rgba(17, 42, 53, 0.1);
+$color-dark-cyan-100-2: rgba(17, 42, 53, 0.2);
+$color-dark-cyan-100-5: rgba(17, 42, 53, 0.5);
+$color-dark-cyan-100-8: rgba(17, 42, 53, 0.8);
 
-$gray-100: #111111;
-$gray-200: #222222;
-$gray-300: #333333;
-$gray-400: #444444;
-$gray-500: #555555;
-$gray-600: #666666;
-$gray-700: #777777;
-$gray-800: #888888;
-$gray-900: #999999;
-$gray-100-1: rgba(17, 17, 17, 0.1);
-$gray-100-2: rgba(17, 17, 17, 0.2);
-$gray-100-5: rgba(17, 17, 17, 0.5);
-$gray-100-8: rgba(17, 17, 17, 0.8);
-$gray-200-1: rgba(34, 34, 34, 0.1);
-$gray-200-2: rgba(34, 34, 34, 0.2);
-$gray-200-5: rgba(34, 34, 34, 0.5);
-$gray-200-8: rgba(34, 34, 34, 0.8);
+$color-dark-cyan-200-1: rgba(26, 63, 80, 0.1);
+$color-dark-cyan-200-2: rgba(26, 63, 80, 0.2);
+$color-dark-cyan-200-5: rgba(26, 63, 80, 0.5);
+$color-dark-cyan-200-8: rgba(26, 63, 80, 0.8);
+
+$color-dark-cyan-300-1: rgba(35, 84, 107, 0.1);
+$color-dark-cyan-300-2: rgba(35, 84, 107, 0.2);
+$color-dark-cyan-300-5: rgba(35, 84, 107, 0.5);
+$color-dark-cyan-300-8: rgba(35, 84, 107, 0.8);
+
+$color-gray-100: #242525;
+$color-gray-200: #363837;
+$color-gray-300: #484b49;
+$color-gray-400: #5a5e5c;
+$color-gray-500: #6b706e;
+$color-gray-600: #7d8380;
+$color-gray-700: #8f9692;
+$color-gray-800: #a1a8a5;
+$color-gray-900: #b3bbb7;
+
+$color-gray-100-1: rgba(36, 37, 37, 0.1);
+$color-gray-100-2: rgba(36, 37, 37, 0.2);
+$color-gray-100-5: rgba(36, 37, 37, 0.5);
+$color-gray-100-8: rgba(36, 37, 37, 0.8);
+
+$color-gray-200-1: rgba(54, 56, 55, 0.1);
+$color-gray-200-2: rgba(54, 56, 55, 0.2);
+$color-gray-200-5: rgba(54, 56, 55, 0.5);
+$color-gray-200-8: rgba(54, 56, 55, 0.8);

@@ -46,12 +46,12 @@ button:focus {
 }
 
 a {
-  color: $dark-cyan-100;
+  color: $color-dark-cyan-100;
 }
 
 a:hover {
   text-decoration: none;
-  color: $dark-cyan-300;
+  color: $color-dark-cyan-300;
 }
 
 i,
@@ -67,7 +67,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: $dark-cyan-100;
+  color: $color-dark-cyan-100;
   margin: 0;
 }
 
@@ -96,7 +96,7 @@ h6 {
 }
 
 p {
-  color: $dark-cyan-100;
+  color: $color-dark-cyan-100;
 }
 
 .icon-btn {
@@ -105,7 +105,7 @@ p {
   height: 35px;
   border: none;
   border-radius: 50%;
-  color: $cyan;
+  color: $color-cyan-primary;
   background-color: transparent;
   text-align: center;
   -webkit-user-select: none;
@@ -118,6 +118,6 @@ p {
   }
 
   &:hover {
-    box-shadow: 1px 0 5px 0 $dark-cyan-100-5;
+    box-shadow: 1px 0 5px 0 $color-dark-cyan-100-5;
   }
 }

@@ -2,51 +2,46 @@
 @import 'src/common/utils';
 @import 'src/common/responsive';
 
-.header_area {
-  .header_nav {
+.navbar-section {
+  .navbar-container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 100;
 
     .navbar {
-      padding: 25px 0;
-      border-radius: 5px;
-      position: relative;
+      padding: 1rem 0;
 
       .navbar-collapse {
         @include small-than-lg {
-          padding: 0 10px;
           &.show {
-            background-color: $dark-cyan-300;
+            background-color: $color-dark-cyan-300;
           }
         }
       }
 
       .nav-item {
-        margin-left: 45px;
         position: relative;
 
         a {
           text-decoration: none;
-          color: $light-100;
+          color: $color-light-100;
           font-weight: 600;
           padding: 4px 0;
 
           &:hover {
-            color: $white;
+            color: $color-white;
 
             span {
               width: 100%;
-              background-color: $white;
+              background-color: $color-white;
             }
           }
 
           span {
             width: 0;
             height: 2px;
-            background-color: $light-100;
+            background-color: $color-light-100;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -55,11 +50,51 @@
         }
 
         @include small-than-lg {
-          margin: 5px 0;
-
           a {
             width: 100%;
             font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &.fixed {
+      position: fixed;
+      background-color: $color-white;
+      box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
+      @extend %transition-all;
+
+      .navbar-collapse {
+        @include small-than-lg {
+          &.show {
+            background-color: $color-white !important;
+          }
+        }
+      }
+
+      .navbar {
+        .nav-item {
+          a {
+            color: $color-cyan-primary;
+
+            &:hover {
+              color: $color-cyan-800;
+
+              span {
+                width: 100%;
+                background-color: $color-cyan-800;
+              }
+            }
+
+            span {
+              width: 0;
+              height: 2px;
+              background-color: $color-cyan-800;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              @extend %transition-all;
+            }
           }
         }
       }

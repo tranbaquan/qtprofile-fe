@@ -1,23 +1,23 @@
 <div class="home">
-  <ul class="social d-none d-xl-flex flex-xl-column align-items-xl-center">
-    <li>
-      <a href="#">
-        <fa-icon [icon]="facebookIcon" size="lg"></fa-icon>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <fa-icon [icon]="instagramIcon" size="lg"></fa-icon>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <fa-icon [icon]="linkedinIcon" size="lg"></fa-icon>
-      </a>
-    </li>
-  </ul>
+  <!--  <ul class="social d-none d-xl-flex flex-xl-column align-items-xl-center">-->
+  <!--    <li>-->
+  <!--      <a href="#">-->
+  <!--        <fa-icon [icon]="facebookIcon" size="lg"></fa-icon>-->
+  <!--      </a>-->
+  <!--    </li>-->
+  <!--    <li>-->
+  <!--      <a href="#">-->
+  <!--        <fa-icon [icon]="instagramIcon" size="lg"></fa-icon>-->
+  <!--      </a>-->
+  <!--    </li>-->
+  <!--    <li>-->
+  <!--      <a href="#">-->
+  <!--        <fa-icon [icon]="linkedinIcon" size="lg"></fa-icon>-->
+  <!--      </a>-->
+  <!--    </li>-->
+  <!--  </ul>-->
   <div class="container home-main">
-    <div class="row align-items-center justify-content-center justify-content-between">
+    <div class="row align-items-center justify-content-center">
       <div class="intro col-lg-6">
         <div class="category">Hello, I'm</div>
         <div class="title mb-3">Quan (Cyan)</div>
@@ -43,9 +43,9 @@
     <div class="row h-100 align-content-start">
       <div class="col-lg-6">
         <div class="avatar-img">
-          <div class="circle-frame"></div>
+          <div class="frame"></div>
           <img src="assets/images/tranbaquan-avatar.png" alt="tranbaquan avatar"/>
-          <div class="circle-frame top"></div>
+          <div class="frame top"></div>
         </div>
       </div>
       <div class="col-lg-6">
@@ -68,5 +68,47 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="experience">
+  <div class="container experience-main h-100">
+    <qtprofile-experience-tree>
+      <qtprofile-milestone period="08/2022 - now">
+        <div class="title mb-2">
+          LINE TECHNOLOGY VIETNAM
+        </div>
+        <div class="description">
+          LINE TECHNOLOGY VIETNAM is one of the overseas development centers of LINE Group, which develops a
+          range of applications globally with the first known service called LINE. As a Backend Engineer, I
+          would like to contribute my knowledge to build the best service for customer and end user.
+        </div>
+      </qtprofile-milestone>
+      <qtprofile-milestone position="right" period="06/2020 - 08/2022">
+        <div class="title mb-2">
+          VNG CLOUD
+        </div>
+        <div class="description mb-1">
+          VNG CLOUD, one of the big business units of VNG CORP, desired bring for customer the best solution for
+          digital transformation.
+        </div>
+        <div class="description">
+          With 2 working years here and various projects, I believe that my contribution is significant for
+          business success and better day by day.
+        </div>
+      </qtprofile-milestone>
+      <qtprofile-milestone period="07/2019 - 06/2020">
+        <div class="title mb-2">
+          KMS TECHNOLOGY
+        </div>
+        <div class="description mb-1">
+          KMS TECHNOLOGY has a global footprint with a suite of companies targeted to serve clients in their
+          respective regions and industries.
+        </div>
+        <div class="description">
+          When I was a student, I have chance to interview and a join KMS as a fresher, I learned a lot of
+          knowledge as well as experience to become a responsibility developer.
+        </div>
+      </qtprofile-milestone>
+    </qtprofile-experience-tree>
   </div>
 </div>
