@@ -1,21 +1,4 @@
 <div class="home">
-  <!--  <ul class="social d-none d-xl-flex flex-xl-column align-items-xl-center">-->
-  <!--    <li>-->
-  <!--      <a href="#">-->
-  <!--        <fa-icon [icon]="facebookIcon" size="lg"></fa-icon>-->
-  <!--      </a>-->
-  <!--    </li>-->
-  <!--    <li>-->
-  <!--      <a href="#">-->
-  <!--        <fa-icon [icon]="instagramIcon" size="lg"></fa-icon>-->
-  <!--      </a>-->
-  <!--    </li>-->
-  <!--    <li>-->
-  <!--      <a href="#">-->
-  <!--        <fa-icon [icon]="linkedinIcon" size="lg"></fa-icon>-->
-  <!--      </a>-->
-  <!--    </li>-->
-  <!--  </ul>-->
   <div class="container home-main">
     <div class="row align-items-center justify-content-center">
       <div class="intro col-lg-6">
@@ -73,35 +56,41 @@
 <div class="experience">
   <div class="container experience-main h-100">
     <qtprofile-experience-tree>
-      <qtprofile-milestone period="08/2022 - now">
-        <div class="title mb-2">
-          LINE TECHNOLOGY VIETNAM
+      <qtprofile-milestone period="08/2022 - now" primaryColor="#06c755" secondaryColor="#f8f8f8">
+        <div class="logo mb-3">
+          <img src="assets/images/line-logo.png" alt="Line Logo">
         </div>
         <div class="description">
-          LINE TECHNOLOGY VIETNAM is one of the overseas development centers of LINE Group, which develops a
+          <span class="company-name" [style.color]="'#06c755'">LINE TECHNOLOGY VIETNAM</span> is one of the
+          overseas development centers of LINE Group, which develops a
           range of applications globally with the first known service called LINE. As a Backend Engineer, I
           would like to contribute my knowledge to build the best service for customer and end user.
         </div>
       </qtprofile-milestone>
-      <qtprofile-milestone position="right" period="06/2020 - 08/2022">
-        <div class="title mb-2">
-          VNG CLOUD
+      <qtprofile-milestone position="right" period="06/2020 - 08/2022" primaryColor="#1a3887"
+                           secondaryColor="#f8f8f8">
+        <div class="logo mb-3">
+          <img src="assets/images/vng-cloud-logo.png" alt="VNG Cloud Logo">
         </div>
-        <div class="description mb-1">
-          VNG CLOUD, one of the big business units of VNG CORP, desired bring for customer the best solution for
+        <div class="description mb-2">
+          <span class="company-name" [style.color]="'#1a3887'">VNG CLOUD</span>, one of the big business units
+          of VNG CORP, desired bring for customer the best solution for
           digital transformation.
         </div>
-        <div class="description">
+        <div class="description mb-2">
           With 2 working years here and various projects, I believe that my contribution is significant for
           business success and better day by day.
         </div>
+        <a class="external-link" href="#">Visit site</a>
+        <button class="button button-default">Visit site</button>
       </qtprofile-milestone>
-      <qtprofile-milestone period="07/2019 - 06/2020">
-        <div class="title mb-2">
-          KMS TECHNOLOGY
+      <qtprofile-milestone period="07/2019 - 06/2020" primaryColor="#27aae1" secondaryColor="#f8f8f8">
+        <div class="logo mb-2">
+          <img src="assets/images/kms-logo.png" alt="KMS Logo">
         </div>
-        <div class="description mb-1">
-          KMS TECHNOLOGY has a global footprint with a suite of companies targeted to serve clients in their
+        <div class="description mb-2">
+          <span class="company-name" [style.color]="'#27aae1'">KMS TECHNOLOGY</span> has a global footprint with
+          a suite of companies targeted to serve clients in their
           respective regions and industries.
         </div>
         <div class="description">
@@ -109,6 +98,26 @@
           knowledge as well as experience to become a responsibility developer.
         </div>
       </qtprofile-milestone>
+      <qtprofile-milestone position="right" period="06/2020 - 08/2022" primaryColor="#1a3887"
+                           secondaryColor="#f8f8f8">
+        <div class="logo mb-3">
+          <img src="assets/images/vng-cloud-logo.png" alt="VNG Cloud Logo">
+        </div>
+        <div class="description mb-2">
+          <span class="company-name" [style.color]="'#1a3887'">VNG CLOUD</span>, one of the big business units
+          of VNG CORP, desired bring for customer the best solution for
+          digital transformation.
+        </div>
+        <div class="description">
+          With 2 working years here and various projects, I believe that my contribution is significant for
+          business success and better day by day.
+        </div>
+      </qtprofile-milestone>
     </qtprofile-experience-tree>
+  </div>
+</div>
+<div class="portfolio">
+  <div class="container portfolio-main">
+
   </div>
 </div>

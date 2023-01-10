@@ -2,11 +2,12 @@
   <div class="line-top"></div>
   <div class="line-vertical"></div>
   <div class="line-bottom"></div>
-  <div class="time-pointer"></div>
-  <div class="milestone-content animate p-2">
-    <div class="arrow"></div>
-    <div class="overlay"></div>
-    <div class="period p-2 d-inline-block">
+  <div class="time-pointer" [style.outline-color]="primaryColor"></div>
+  <div #content class="milestone-content animate p-4" [style.background-color]="secondaryColor"
+       [style.color]="primaryColor">
+    <div class="arrow" [style.background-color]="secondaryColor"></div>
+    <div class="overlay" [style.background-color]="secondaryColor"></div>
+    <div class="period p-2 d-inline-block" [style.background-color]="primaryColor" [style.color]="secondaryColor">
       <span>{{period}}</span>
     </div>
     <ng-content></ng-content>

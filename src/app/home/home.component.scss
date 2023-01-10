@@ -14,7 +14,7 @@ $nav-bar-height: 100px;
   box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
 
   @include lg {
-    height: 100vh;
+    //height: 100vh;
   }
 
   .overlay {
@@ -185,19 +185,25 @@ $nav-bar-height: 100px;
 
 .experience {
   padding: 100px 0;
-  height: 100vh;
   background-color: $color-light-400;
 
   .experience-main {
-    .title {
-      color: $color-cyan-primary;
+    .logo {
       font-weight: 700;
+
+      img {
+        height: 2rem;
+      }
     }
 
     .description {
-      font-size: .815rem;
+      font-size: .875rem;
       color: $color-dark-cyan-100-8;
       text-align: justify;
+
+      .company-name {
+        font-weight: 700;
+      }
     }
   }
 }

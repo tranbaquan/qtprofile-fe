@@ -5,7 +5,7 @@ module.exports = {
   root: true,
   rules: {
     quotes: ['error', 'single'],
-    'no-unused-vars': ['warn']
+    'no-unused-vars': ['off'],
   },
   env: {
     browser: true,
