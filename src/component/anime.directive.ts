@@ -16,7 +16,6 @@ export class AnimeDirective implements OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
     if ('animeParams' in changes) {
       this.dispose();
       this.animeInstance = anime({

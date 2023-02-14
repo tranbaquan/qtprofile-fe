@@ -1,103 +1,76 @@
-@import 'src/common/color-variables';
 @import 'src/common/utils';
 @import 'src/common/responsive';
+@import 'src/common/color-variables';
 
-.navbar-section {
-  .navbar-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
+.nav {
+  min-height: 84px;
+}
 
-    .navbar {
-      padding: 1rem 0;
+.nav-item {
 
-      .navbar-collapse {
-        @include small-than-lg {
-          &.show {
-            background-color: $color-dark-cyan-300;
-          }
-        }
-      }
-
-      .nav-item {
-        position: relative;
-
-        a {
-          text-decoration: none;
-          color: $color-light-100;
-          font-weight: 600;
-          padding: 4px 0;
-
-          &:hover {
-            color: $color-white;
-
-            span {
-              width: 100%;
-              background-color: $color-white;
-            }
-          }
-
-          span {
-            width: 0;
-            height: 2px;
-            background-color: $color-light-100;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            @extend %transition-all;
-          }
-        }
-
-        @include small-than-lg {
-          a {
-            width: 100%;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-
-    &.fixed {
-      position: fixed;
-      background-color: $color-white;
-      box-shadow: 1px 0 5px 0 $color-dark-cyan-100-2;
-      @extend %transition-all;
-
-      .navbar-collapse {
-        @include small-than-lg {
-          &.show {
-            background-color: $color-white !important;
-          }
-        }
-      }
-
-      .navbar {
-        .nav-item {
-          a {
-            color: $color-cyan-primary;
-
-            &:hover {
-              color: $color-cyan-800;
-
-              span {
-                width: 100%;
-                background-color: $color-cyan-800;
-              }
-            }
-
-            span {
-              width: 0;
-              height: 2px;
-              background-color: $color-cyan-800;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              @extend %transition-all;
-            }
-          }
-        }
-      }
+  &:hover {
+    .effect {
+      width: 100%;
     }
   }
+
+  .effect {
+    @extend %transition-all;
+  }
+
+  @include lg {
+    .effect {
+      width: 0;
+      height: 2px;
+      background-color: $color-dark-cyan-300;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+}
+
+.circle {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+}
+
+.line-vertical {
+  width: 2px;
+  min-height: 4rem;
+}
+
+.bg-kms {
+  background-color: #26a9e0;
+}
+
+.bg-vng {
+  background-color: #f37022;
+}
+
+.bg-line {
+  background-color: #00b900;
+}
+
+.bg-secondary {
+  background-color: $color-dark-cyan-300;
+}
+
+.bg-light {
+  background-color: $color-light-300;
+}
+
+.gradient {
+  border-radius: 1rem;
+  background: radial-gradient(100% 1126.49% at 100% 0%, rgba(106, 200, 212, 0.4) 0%, rgba(33, 33, 33, 0) 100%), $color-dark-cyan-100;
+}
+
+.text-cyan {
+  color: $color-cyan-700;
+}
+
+.cover-img {
+  height: 400px;
+  top: 0;
+  right: 0;
 }
