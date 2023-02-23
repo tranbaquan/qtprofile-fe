@@ -27,11 +27,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "allowedCommonJsDependencies": [
+              "animejs"
+            ],
             "styles": [
               "src/styles.scss",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
-              "src/common/theme.css"
+              "src/styles/theme.css"
             ],
             "scripts": []
           },

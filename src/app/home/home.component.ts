@@ -1,25 +1,35 @@
-import { Component, OnInit } from '@angular/core';
-import {
-  faSquareFacebook,
-  faLinkedin,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'qtprofile-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  facebookIcon = faSquareFacebook;
-  linkedinIcon = faLinkedin;
-  instagramIcon = faInstagram;
+
+  isScrolled = false;
+  activeTab: number = 0;
 
   constructor() {
-    // TODO
   }
 
   ngOnInit(): void {
-    // TODO
+    this.isScrolled = !!window.scrollY;
   }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(): void {
+    this.isScrolled = !!window.scrollY;
+  }
+
+  goToLink(link: string): void {
+    window.open(link, '_blank')?.focus();
+  }
+
+  scrollTo(id: string): void {
+    document.querySelector(id)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
 }

@@ -1,8 +1,0 @@
-<div class="experience-tree my-0 mx-auto">
-  <div class="tree"></div>
-  <div class="now" (mouseenter)="onNowEnter()" (mouseleave)="onNowLeave()"></div>
-  <div class="current-date" [class.d-none]="!showCurrentDate">{{now | date: 'dd-MM-yyyy'}}</div>
-  <div class="milestones d-flex flex-column gap-5 pt-5">
-    <ng-content></ng-content>
-  </div>
-</div>
